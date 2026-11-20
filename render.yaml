@@ -1,0 +1,25 @@
+# Blueprint de Render: crea el backend (la "cocina"). Los secretos se cargan en el panel, nunca acá.
+services:
+  - type: web
+    name: lustre-turnos-api
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/salud
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DATABASE_URL      # cadena de conexión de Neon
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: FRONTEND_URL      # URL de Netlify (para CORS), sin barra final
+        sync: false

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lustre · Turnos de uñas</title>
+  <meta name="description" content="Reservá tu turno de manicuría en Lustre, sin llamar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+</head>
+<body>
+  <header class="barra">
+    <a class="marca" href="#/">Lustre</a>
+    <nav id="nav" aria-label="Principal"></nav>
+  </header>
+  <div id="despertar" class="despertar" hidden>Despertando el servidor… la primera vez puede tardar hasta 30 segundos.</div>
+  <div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
+  <main id="app" tabindex="-1"></main>
+  <footer class="pie">Horario de atención de lunes a sábado, de 10 a 19 h (hora de Argentina).</footer>
+  <noscript><p style="padding:2rem">Necesitás activar JavaScript para reservar tu turno.</p></noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

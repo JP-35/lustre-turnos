@@ -1,0 +1,11 @@
+# Netlify sirve el frontend estático (el "salón"). La URL del backend llega por la variable de entorno API_URL.
+[build]
+  publish = "frontend"
+  command = "echo \"window.APP_CONFIG = { API_URL: '$API_URL' };\" > frontend/config.js"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"

@@ -1,0 +1,17 @@
+{
+  "name": "lustre-turnos-backend",
+  "version": "1.0.0",
+  "description": "API de reservas de turnos para Lustre (estudio de uñas)",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test --test-concurrency=1 \"test/*.test.js\"",
+    "informe": "node scripts/informe.js"
+  },
+  "dependencies": {
+    "pg": "^8.13.1"
+  }
+}
