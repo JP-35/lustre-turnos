@@ -4,7 +4,7 @@ Sistema de **reservas de turnos para un estudio de uñas** con reglas de negocio
 
 | | |
 |---|---|
-| 🌐 **App publicada (frontend, Netlify)** | `COMPLETAR: https://….netlify.app` |
+| 🌐 **App publicada (frontend, Netlify)** | [lustre-turnos.netlify.app](https://lustre-turnos.netlify.app) |
 | ⚙️ **API (Render)** | `COMPLETAR: https://….onrender.com/api/salud` |
 | 🗄️ **Base de datos** | PostgreSQL en Neon |
 | 🔑 **Usuario admin de prueba** | `COMPLETAR (email y clave que cargues en Render)` |

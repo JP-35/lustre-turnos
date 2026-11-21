@@ -29,7 +29,7 @@ Orden: **base → backend → frontend → CORS**.
 3. Desplegar. El build escribe `frontend/config.js` con esa URL.
 
 ## 4. CORS
-Volver a Render y completar `FRONTEND_URL` = `https://TU-SITIO.netlify.app`. CORS funciona como una **lista de invitados**: solo esa página puede hablar con la API. Render se reinicia solo.
+Volver a Render y completar `FRONTEND_URL` = `https://lustre-turnos.netlify.app`. CORS funciona como una **lista de invitados**: solo esa página puede hablar con la API. Render se reinicia solo.
 
 ## 5. Verificación final (lo que va a mirar la revisión)
 - [ ] `…/api/salud` responde ok.
